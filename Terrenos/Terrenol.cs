@@ -33,7 +33,4 @@ namespace proyecto1.Terreno
         #endregion  Methods
 
     }
-
-
-
 }

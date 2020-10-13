@@ -62,7 +62,7 @@ namespace proyecto1.Almacenes
                 semillas.Add(new Semilla()
                 {
                     tipo = "Brocoli",
-                    cantAgua = 3,
+                    cantAgua = 100,
                     sombra = false,
                     size = 0
                 });
