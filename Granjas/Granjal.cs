@@ -4,5 +4,4 @@ namespace proyecto1.Granja
     {
 
     }
-
 }
