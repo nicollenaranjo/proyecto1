@@ -27,6 +27,7 @@ namespace proyecto1.Almacenes
             {
                 semillas.Add(new Semilla()
                 {
+                    id = rand.Next(100,500),
                     tipo = "Girasol",
                     cantAgua = 350,
                     sombra = false,
@@ -39,6 +40,7 @@ namespace proyecto1.Almacenes
             {
                 semillas.Add(new Semilla()
                 {
+                    id = rand.Next(100,500),
                     tipo = "Sandia",
                     cantAgua = 35,
                     sombra = false,
@@ -50,6 +52,7 @@ namespace proyecto1.Almacenes
             {
                 semillas.Add(new Semilla()
                 {
+                    id = rand.Next(100,500),
                     tipo = "Frijol",
                     cantAgua = 3,
                     sombra = false,
@@ -61,6 +64,7 @@ namespace proyecto1.Almacenes
             {
                 semillas.Add(new Semilla()
                 {
+                    id = rand.Next(100,500),
                     tipo = "Brocoli",
                     cantAgua = 100,
                     sombra = false,

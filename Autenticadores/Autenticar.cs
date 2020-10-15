@@ -4,7 +4,7 @@ namespace proyecto1.Autenticadores
     public class Autenticador
     {
         #region Methods
-        public bool autenticar( )
+        public bool autenticar()
         {
             return true;
         }

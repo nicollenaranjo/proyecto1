@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using proyecto1.Autenticadores;
 
-namespace proyecto1.Terreno
+namespace proyecto1.Terrenos
 {
     public class Terreno
     {
@@ -26,7 +26,7 @@ namespace proyecto1.Terreno
         #endregion  Initialize
 
         #region  Methods
-        public void cambioTerreno() //para del terreno 1 al plan b
+        public void cambioTerreno() //pasa del terreno 1 al plan b
         {
             Autenticador a;
         } 
