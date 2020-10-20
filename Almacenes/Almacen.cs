@@ -29,12 +29,11 @@ namespace proyecto1.Almacenes
                 {
                     id = rand.Next(100,500),
                     tipo = "Girasol",
-                    cantAgua = 350,
+                    cantAgua = 350, //350
                     sombra = false,
                     size = 0
                 });
             }
-
             a = rand.Next(1,10);
             for( int i = 0; i < a; i++ )
             {
@@ -42,7 +41,7 @@ namespace proyecto1.Almacenes
                 {
                     id = rand.Next(100,500),
                     tipo = "Sandia",
-                    cantAgua = 35,
+                    cantAgua = 35, //35
                     sombra = false,
                     size = 0
                 });
@@ -54,7 +53,7 @@ namespace proyecto1.Almacenes
                 {
                     id = rand.Next(100,500),
                     tipo = "Frijol",
-                    cantAgua = 3,
+                    cantAgua = 3, //3
                     sombra = false,
                     size = 0
                 });
@@ -66,7 +65,7 @@ namespace proyecto1.Almacenes
                 {
                     id = rand.Next(100,500),
                     tipo = "Brocoli",
-                    cantAgua = 100,
+                    cantAgua = 100, //100
                     sombra = false,
                     size = 0
                 });
