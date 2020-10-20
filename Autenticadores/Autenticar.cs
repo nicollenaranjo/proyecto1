@@ -6,8 +6,7 @@ namespace proyecto1.Autenticadores
         #region Methods
         public bool autentica()
         {
-            bool a = true;
-            return a;
+            return true;
         }
         #endregion Methods
     }
