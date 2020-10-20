@@ -28,7 +28,15 @@ namespace proyecto1.Terrenos
         #region  Methods
         public void cambioTerreno() //pasa del terreno 1 al plan b
         {
-            Autenticador a;
+            if( validador == false )
+            {
+                Autenticador a1 = null;
+                validador = a1.autentica();
+            }
+            else
+            {
+                Console.WriteLine( "El cambio del terreno ya está en ejecución" );
+            }
         } 
         #endregion  Methods
 

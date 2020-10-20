@@ -4,9 +4,10 @@ namespace proyecto1.Autenticadores
     public class Autenticador
     {
         #region Methods
-        public bool autenticar()
+        public bool autentica()
         {
-            return true;
+            bool a = true;
+            return a;
         }
         #endregion Methods
     }
