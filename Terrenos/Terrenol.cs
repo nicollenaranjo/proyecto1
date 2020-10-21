@@ -26,7 +26,7 @@ namespace proyecto1.Terrenos
         #endregion  Initialize
 
         #region  Methods
-        public void cambioTerreno() //pasa del terreno 1 al plan b
+        public bool cambioTerreno() //pasa del terreno 1 al plan b
         {
             if( validador == false && estadoTerreno == totalTerreno )
             {
@@ -37,6 +37,7 @@ namespace proyecto1.Terrenos
             {
                 Console.WriteLine( "El terreno principal no se enucentra totalmente lleno o planB ya está en ejecución." );
             }
+            return validador;
         } 
         #endregion  Methods
 

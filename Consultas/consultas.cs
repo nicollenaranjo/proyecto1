@@ -12,34 +12,31 @@ namespace proyecto1.Consultas
         {
             try
             {
-                Semilla s1 = g.almacenOfi.semillasGuardas.First( s2 => s2.id == s.id ) as Semilla;    
+                Semilla s1 = g.almacenOfi.semillasGuardas.First( s2 => s2.id == s.id ) as Semilla;  
+                Semilla s2 = g.terrenoOfi.listSemillas.First( s3 => s3.id == s.id ) as Semilla;   
+                Semilla s3 = g.terrenoOfi.listSemillas.First( s4 => s4.id == s.id ) as Semilla;    
                 Console.WriteLine("El tipo de semilla es:", s.tipo);
                 Console.WriteLine("La cantidad de agua que necesita es:", s.cantAgua);
                 Console.WriteLine("La semilla en este momento se encuentra recibiendo:", s.sombra);
-                Console.WriteLine("Su tamaño actual es: ", s.size);   
-                Console.WriteLine("Se encuentra en el Almacen" );  
+                Console.WriteLine("Su tamaño actual es: ", s.size);  
+                if( s1 != null )
+                {
+                    Console.WriteLine("Se encuentra en el Almacen" );  
+                }
+                if( s2 != null )
+                {
+                    Console.WriteLine("Se encuentra en el Terreno" );  
+                }
+                if( s3 != null )
+                {
+                    Console.WriteLine("Se encuentra en el planB" );  
+                }
             }
             catch( ArgumentNullException ex )
             {
-                try
-                {
-                    Semilla s1 = g.terrenoOfi.listSemillas.First( s2 => s2.id == s.id ) as Semilla;  
-                    Console.WriteLine("El tipo de semilla es:", s.tipo);
-                    Console.WriteLine("La cantidad de agua que necesita es:", s.cantAgua);
-                    Console.WriteLine("La semilla en este momento se encuentra recibiendo:", s.sombra);
-                    s.size+=5;
-                    Console.WriteLine("Su tamaño actual es: ", s.size);  
-                    Console.WriteLine("Se encuentra en el Terreno" );  
-
-                }
-                catch (ArgumentNullException exe)
-                {
-                    Console.WriteLine("La semilla ingresada no se encontró.");
-                    throw;
-                }
+                throw ex;
             }
         }
         #endregion Methods
-
     }
 }
