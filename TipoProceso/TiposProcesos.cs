@@ -12,7 +12,6 @@ namespace proyecto1.TipoProceso
         #region Methods
         public void riego(Semilla s, Granja g)
         {
-            //Cómo se manejaria el sistema de riego si lo tengo que utiliar hasta 3 veces por dia
             Semilla s1 = g.terrenoOfi.listSemillas.Find( s11 => s11.id == s.id ) as Semilla;
             Semilla s2 = g.terrenoOfi.planB.listSemillas.Find( s22 => s22.id == s.id ) as Semilla;
             if( s1 != null )
